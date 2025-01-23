@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header">
+            <div class="quick-nav">
+                <a href="#intro">INTRODUCTION</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="quick-links">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="intro" id="intro">
+        <div class="intro">
+            <div class="items">
+                <div>
+                    <h1>
+                        Hey, <br />
+                        I'm <span>Ahmed</span> <br />
+                        Full-stack Developer
+                      </h1>
+    
+                      <div class="btn-holder">
+                        <a class='contact-btn' href="#"><b>Contact</b></a>
+                      </div>
+                      
+                </div>
+                
+                <div class="intro-icon">
+                    <img src="https://i.postimg.cc/ZqZ2wCK7/businessman-waiving-hand.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="projects" id="projects">
+        <div class="title">
+            <h1>Projects I've <span>worked</span> on</h1>
+            
+        </div>
+        
+        <div class="projects">
+            
+                <div class="project-container">
+
+                    <div class="project">   
+                        <a href="https://bondo2-hub.github.io/Nexus/"><img src="https://i.postimg.cc/Bb6BbGZB/Screenshot-1.png" alt="Project 1"></a>
+                        
+                        <h2>Nexus</h2>
+                    </div>
+
+                    <div class="project">
+                        <a href="https://bondo2-hub.github.io/QuantumWave/">
+                            <img src="https://i.postimg.cc/4xSnt7vc/Screenshot-3.png" alt="Project 1">
+                        </a>
+                        
+                        <h2>QuantumWave</h2>
+                    </div>
+
+                    <div class="project">
+                        <a href="https://bondo2-hub.github.io/unpublished/">
+                            <img src="https://i.postimg.cc/ZRcS8XkQ/Screenshot-4.png" alt="Project 1">
+                        </a>
+                        
+                        <h2>Pyramida</h2>
+                    </div>
+
+                    <div class="project">
+                        <a href="#">
+                            <img src="https://i.postimg.cc/bw7DWSGh/Screenshot-5.png" alt="Project 1">
+                        </a>
+    
+                        <h2>eMessage</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view_projects-btn-holder">
+                <button class="view_projects-btn"><a href="#"><b>View More <i class='bx bx-chevron-right' ></i></b></a></button>
+            </div>
+    </section>
+
+    <section aria-labelledby="intrest" id="contact">
+        <div class="intrest">
+            <div class="t1">
+                <h1><b>Interested in any of my <span>work?</span></b></h1>
+            </div>
+
+            <div class="t2">
+                <p>How do you like your coffee.?</p>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="contacts">
+                <a href='#'><i class='bx bxl-instagram' ></i> Instagram</a>
+                <a href='#'><i class='bx bxl-twitter'></i> Twitter</a>
+                <a href='#'><i class='bx bxl-github' ></i> Github</a>
+                <a href='#'><i class='bx bxl-whatsapp' ></i> Whatsapp</a>
+                <a href='#'><i class='bx bxl-linkedin-square' ></i> Linkdin</a>
+                <a href='#'><i class='bx bxl-gmail' ></i> Email</a>
+            </div>
+        </div>
+    </section>
+</body>
+    <script src="script.js"></script>
+</html>
+
+<style>
+    .intrest {
+        background: linear-gradient(var(--body-color), var(--color3),var(--color3), var(--color3), var(--color3), var(--color3));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .intrest .t1 {
+        text-align: center;
+        font-size: 50px;
+        color: var(--color1);
+        margin-top: 100px;
+    }
+
+    .intrest .t1 span {
+        color: var(--accent-color);
+    }
+
+    .intrest .t2 {
+        text-align: center;
+        font-size: 20px;
+        color: var(--color1);
+        margin-top: 10px;
+    }
+
+    .intrest .t2 span {
+        color: var(--accent-color);
+    }
+
+    .intrest .contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--color1);
+        font-size: 18px;
+        gap: 35px;
+    }
+
+    .contacts a {
+        text-decoration: none;
+        color: var(--color1);
+        transition: var(--hover-delay) ease;
+    }
+
+    .intrest .contacts .bxl-meta {
+        color: #0082fb;
+    }
+
+    .intrest .contacts .bxl-twitter {
+        color: #1da1f2;
+    }
+
+    .intrest .contacts .bxl-instagram {
+        color: #e1306c;
+    }
+
+    .intrest .contacts .bxl-whatsapp {
+        color: #25d366;
+    }
+    
+    .intrest .contacts .bxl-linkedin-square {
+        color: #0A66C2;
+    }
+
+    .intrest .contacts .bxl-gmail {
+        color: #c71610;
+    }
+
+    .intrest .contacts a:hover {
+        transform: scale(1.2);
+    }
+    
+    .sep {
+    margin-top: 50px;
+    width: 500px;
+    height: 3px;
+    border-bottom: 1px solid var(--color1);
+    position: relative;
+}
+
+.sep::before,
+.sep::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sep::before {
+    left: 0;
+}
+
+.sep::after {
+    right: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+:root {
+    --body-color: #f5f5f5;
+    --color1: white;
+    --color2: black;
+    --color3: #131313;
+    --accent-color: blue;
+    --hover-delay: 0.2s;
+  }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .quick-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 20px;
+}
+
+.quick-nav a {
+  color: var(--color2);
+  text-decoration: none;
+  transition: var(--hover-delay) ease;
+}
+
+.quick-nav a:hover {
+  color: var(--accent-color);
+}
+
+.header .quick-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.header .quick-links a {
+  color: var(--color2);
+  text-decoration: none;
+  transition: var(--hover-delay) ease;
+  font-size: 25px;
+}
+
+.header .quick-links a:hover {
+  color: var(--accent-color);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 100vh;
+}
+
+.nav-btn a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro h1 {
+  color: black;
+  font-size: 50px;
+}
+
+.intro span {
+  color: var(--accent-color);
+}
+
+.intro .contact-btn {
+  background-color: blue;
+  padding: 15px 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.intro-icon {
+  padding-left: 100px;
+  padding-right: 50px;
+  animation: jump 2s ease-in-out infinite;
+  position: relative;
+}
+
+.btn-holder {
+  margin-top: 30px;
+}
+
+.intro .contact-btn:hover {
+  animation: pulse 1.5s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-color);
+  }
+
+  70% {
+    box-shadow: 0 0 0 5px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px 0;
+  background-color: var(--body-color);
+  color: var(--color2);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.icon {
+  margin-right: 50px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.title img {
+  width: 150px;
+  height: 150px;
+}
+
+.title span {
+  color: var(--accent-color);
+}
+
+.project {
+  margin-bottom: 20px;
+  width: 800px;
+  height: 450px;
+  background-color: #f5f5f5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: var(--hover-delay) ease;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.view_projects-btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_projects-btn a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.view_projects-btn {
+  width: 400px;
+  height: 50px;
+  background-color: blue;
+  border: 1px solid var(--color3);
+  color: var(--color1);
+  font-size: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: var(--hover-delay) ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.view_projects-btn::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0;
+}
+
+.view_projects-btn:hover::after {
+  animation: shine 2s ease-out infinite;
+  opacity: 0.6;
+}
+
+.view_projects-btn i {
+  margin-left: 10px;
+}
+
+.view_projects-btn:hover {
+  background-color: blue;
+}
+
+.view_projects-btn:hover i {
+  animation: effect1 1s ease infinite;
+}
+
+@keyframes effect1 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+</style>
