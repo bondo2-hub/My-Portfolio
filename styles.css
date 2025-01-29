@@ -1,3 +1,111 @@
+.intrest {
+  background: linear-gradient(
+    var(--body-color),
+    var(--color3),
+    var(--color3),
+    var(--color3),
+    var(--color3),
+    var(--color3)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.intrest .t1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--color1);
+  margin-top: 100px;
+}
+
+.intrest .t1 span {
+  color: var(--accent-color);
+}
+
+.intrest .t2 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--color1);
+  margin-top: 10px;
+}
+
+.intrest .t2 span {
+  color: var(--accent-color);
+}
+
+.intrest .contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  color: var(--color1);
+  font-size: 18px;
+  gap: 35px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--color1);
+  transition: var(--hover-delay) ease;
+}
+
+.intrest .contacts .bxl-meta {
+  color: #0082fb;
+}
+
+.intrest .contacts .bxl-twitter {
+  color: #1da1f2;
+}
+
+.intrest .contacts .bxl-instagram {
+  color: #e1306c;
+}
+
+.intrest .contacts .bxl-whatsapp {
+  color: #25d366;
+}
+
+.intrest .contacts .bxl-linkedin-square {
+  color: #0a66c2;
+}
+
+.intrest .contacts .bxl-gmail {
+  color: #c71610;
+}
+
+.intrest .contacts a:hover {
+  transform: scale(1.2);
+}
+
+.sep {
+  margin-top: 50px;
+  width: 500px;
+  height: 3px;
+  border-bottom: 1px solid var(--color1);
+  position: relative;
+}
+
+.sep::before,
+.sep::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sep::before {
+  left: 0;
+}
+
+.sep::after {
+  right: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +115,13 @@
 }
 
 :root {
-    --body-color: #f5f5f5;
-    --color1: white;
-    --color2: black;
-    --color3: #131313;
-    --accent-color: blue;
-    --hover-delay: 0.2s;
-  }
+  --body-color: #f5f5f5;
+  --color1: white;
+  --color2: black;
+  --color3: #131313;
+  --accent-color: blue;
+  --hover-delay: 0.2s;
+}
 
 *::-webkit-scrollbar {
   display: none;
@@ -25,7 +133,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -240,7 +348,7 @@ html {
   width: 400px;
   height: 50px;
   background-color: blue;
-  border: 1px solid var(--color3);
+  border: none;
   color: var(--color1);
   font-size: 20px;
   margin-bottom: 50px;
@@ -317,7 +425,54 @@ html {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-color: #f2f2f2;
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .intro-icon {
+    width: 500px;
+  }
+
+  .intro-icon img {
+    width: 300px;
+    height: auto;
+  }
+
+  .header .quick-nav a {
+    display: none;
+  }
+
+  .header .quick-links a {
+    font-size: 20px;
+  }
+
+  #projects .title {
+    font-size: 20px;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+  }
+
+  .project h2 {
+    font-size: 25px;
+  }
+
+  .intrest .t1 {
+    font-size: 20px;
+  }
+  .intrest .t2 {
+    font-size: 18px;
+  }
+
+  .intrest .contacts {
+    flex-direction: column;
   }
 }
